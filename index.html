@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ひなたコンパス | ホームページ制作・AI活用サポート(宮崎)</title>
+<meta name="description" content="宮崎の飲食店様へ。ホームページ制作代行とAI導入サポートで、あなたの事業に伴走します。まずはお気軽にご相談ください。モニター価格30,000円(税込)〜。">
+
+<!-- canonical / OGP -->
+<link rel="canonical" href="https://hinata-compass.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ひなたコンパス">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="ひなたコンパス | ホームページ制作・AI活用サポート(宮崎)">
+<meta property="og:description" content="Googleマップから見つかる、お店のホームページを。宮崎の飲食店様向けのホームページ制作代行と、中小企業様向けのAI導入コンサル。">
+<meta property="og:url" content="https://hinata-compass.pages.dev/">
+<meta property="og:image" content="https://hinata-compass.pages.dev/images/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ひなたコンパス － Googleマップから見つかる、お店のホームページを。">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ひなたコンパス | ホームページ制作・AI活用サポート(宮崎)">
+<meta name="twitter:description" content="Googleマップから見つかる、お店のホームページを。宮崎の飲食店様向けのホームページ制作代行と、中小企業様向けのAI導入コンサル。">
+<meta name="twitter:image" content="https://hinata-compass.pages.dev/images/ogp.png">
+<meta name="theme-color" content="#1E3452">
+
+<!-- favicon -->
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1E3452;
+    --navy-soft:#3A5473;
+    --navy-deep:#122034;
+    --gold:#E8A33D;
+    --gold-lt:#F7CA78;
+    --cream:#FAF6EE;
+    --line:#DED2BC;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans JP", sans-serif;
+    font-size:17px;
+    background:var(--cream);
+    color:var(--navy-deep);
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+  .mincho{font-family:"Shippori Mincho B1", serif;}
+  .wrap{width:100%; max-width:920px; margin:0 auto; padding:0 24px;}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 20px;
+    max-width:920px; margin:0 auto;
+  }
+  .header-inner img{height:40px; width:auto;}
+  .header-tel{
+    font-family:"Shippori Mincho B1", serif;
+    font-size:15px;
+    color:var(--navy);
+    border:1px solid var(--navy);
+    border-radius:999px;
+    padding:8px 16px;
+    white-space:nowrap;
+    text-decoration:none;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    min-height:88vh;
+    display:flex;
+    align-items:flex-start;
+    background:
+      linear-gradient(180deg, rgba(18,32,52,.60) 0%, rgba(18,32,52,.34) 38%, rgba(18,32,52,.14) 68%, rgba(18,32,52,.05) 100%),
+      #122034 url("images/hero_coast.jpg") center center / cover no-repeat;
+  }
+  .hero-inner{
+    position:relative; z-index:2;
+    width:100%; max-width:920px; margin:0 auto;
+    padding:48px 24px 40px;
+    color:var(--cream);
+  }
+  .hero-eyebrow{
+    font-size:14px;
+    letter-spacing:.14em;
+    color:#D98A1F;
+    font-weight:700;
+    margin-bottom:18px;
+    text-shadow:0 1px 3px rgba(0,0,0,.8);
+  }
+  .hero h1{
+    font-family:"Shippori Mincho B1", serif;
+    font-weight:700;
+    font-size:clamp(30px, 7vw, 48px);
+    line-height:1.55;
+    margin-bottom:22px;
+    text-shadow:0 1px 2px rgba(0,0,0,.9), 0 3px 10px rgba(0,0,0,.45);
+  }
+  .hero p.lead{
+    font-size:clamp(17px, 4vw, 20px);
+    color:#FFFFFF;
+    margin-bottom:34px;
+    text-shadow:0 1px 2px rgba(0,0,0,.85), 0 2px 8px rgba(0,0,0,.45);
+  }
+  .btn-row{display:flex; flex-wrap:wrap; gap:14px;}
+  .btn{
+    display:inline-block;
+    font-family:"Shippori Mincho B1", serif;
+    font-size:16px;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:999px;
+    transition:opacity .2s ease;
+  }
+  .btn:active{opacity:.75;}
+  .btn-primary{background:var(--gold); color:var(--navy-deep); font-weight:700;}
+  .btn-outline{border:1px solid var(--cream); color:var(--cream); text-shadow:0 1px 3px rgba(0,0,0,.5);}
+
+  /* ---------- section basics ---------- */
+  section{padding:76px 0;}
+  .section-title{
+    font-family:"Shippori Mincho B1", serif;
+    font-weight:700;
+    font-size:clamp(24px, 5vw, 32px);
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .section-kicker{
+    font-size:13px;
+    letter-spacing:.16em;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:14px;
+  }
+
+  /* ---------- concept ---------- */
+  .concept{background:var(--white);}
+  .concept p{
+    font-size:18px;
+    color:var(--navy-deep);
+    margin-bottom:22px;
+    max-width:760px;
+  }
+  .concept p:last-of-type{margin-bottom:0;}
+  .concept strong{color:var(--navy); font-weight:700;}
+
+  /* ---------- services ---------- */
+  .services{background:var(--cream);}
+  .card-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    margin-top:32px;
+  }
+  .card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:30px 26px;
+  }
+  .card .tag{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.06em;
+    color:var(--navy-deep);
+    background:var(--gold-lt);
+    padding:4px 12px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  .card h3{
+    font-family:"Shippori Mincho B1", serif;
+    font-size:22px;
+    color:var(--navy);
+    margin-bottom:12px;
+  }
+  .card p{font-size:16.5px; color:#33455e; margin-bottom:14px;}
+  .price-box{
+    display:flex; align-items:baseline; gap:8px;
+    border-top:1px dashed var(--line);
+    padding-top:14px;
+    margin-top:4px;
+  }
+  .price-box .label{font-size:13px; color:#6b7688;}
+  .price-box .price{
+    font-family:"Shippori Mincho B1", serif;
+    font-size:28px; color:var(--navy); font-weight:700;
+  }
+  .price-box .unit{font-size:14px; color:#6b7688;}
+  .price-note{
+    font-size:13.5px; line-height:1.75; color:#6b7688;
+    margin-top:10px;
+  }
+
+  /* ---------- quote band ---------- */
+  .quote-band{
+    background:var(--navy);
+    color:var(--cream);
+    text-align:center;
+    padding:80px 24px;
+  }
+  .quote-band .q{
+    font-family:"Shippori Mincho B1", serif;
+    font-weight:700;
+    font-size:clamp(26px, 6vw, 38px);
+    line-height:1.7;
+    max-width:640px; margin:0 auto 18px;
+  }
+  .quote-band .who{font-size:14px; color:var(--gold-lt); letter-spacing:.08em;}
+
+  /* ---------- scenery ---------- */
+  .scenery{
+    position:relative;
+    height:46vh;
+    min-height:280px;
+    max-height:460px;
+    background:#1a1108 url("images/scenery_sakura.jpg") center 62% / cover no-repeat;
+  }
+  .scenery::after{
+    content:"";
+    position:absolute; inset:0;
+    background:linear-gradient(0deg, rgba(18,32,52,.82) 0%, rgba(18,32,52,.48) 30%, rgba(18,32,52,0) 64%);
+  }
+  .scenery-caption{
+    position:absolute; left:0; right:0; bottom:0; z-index:2;
+    padding:22px 24px 26px;
+    max-width:920px; margin:0 auto;
+    font-family:"Shippori Mincho B1", serif;
+    font-size:clamp(17px, 3.6vw, 21px);
+    color:#FFFFFF;
+    text-shadow:0 1px 3px rgba(0,0,0,.85), 0 2px 8px rgba(0,0,0,.5);
+  }
+
+  /* ---------- about / info ---------- */
+  .about{background:var(--white);}
+  .info-table{margin-top:28px; border-top:1px solid var(--line);}
+  .info-row{
+    display:flex; flex-direction:column; gap:4px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .info-row .k{font-size:13px; letter-spacing:.1em; color:var(--gold); font-weight:700;}
+  .info-row .v{font-size:19px; color:var(--navy-deep);}
+  .info-row .v a{text-decoration:none; color:var(--navy); border-bottom:1px solid var(--navy);}
+
+  /* ---------- closing CTA ---------- */
+  .closing{
+    background:var(--cream);
+    text-align:center;
+    padding:88px 24px;
+  }
+  .closing h2{
+    font-family:"Shippori Mincho B1", serif;
+    font-weight:700;
+    font-size:clamp(24px, 5.5vw, 32px);
+    color:var(--navy);
+    margin-bottom:16px;
+  }
+  .closing p{font-size:17px; color:#33455e; margin-bottom:32px; max-width:480px; margin-left:auto; margin-right:auto;}
+  .closing .btn-row{justify-content:center;}
+  .closing .btn-primary{background:var(--navy); color:var(--cream);}
+  .closing .btn-outline{border:1px solid var(--navy); color:var(--navy);}
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--navy-deep);
+    color:var(--cream);
+    text-align:center;
+    padding:44px 24px 34px;
+  }
+  footer .fname{
+    font-family:"Shippori Mincho B1", serif;
+    font-size:20px;
+    letter-spacing:.06em;
+    margin-bottom:6px;
+  }
+  footer .ftag{font-size:13px; color:var(--gold-lt); margin-bottom:22px;}
+  footer .fcopy{font-size:12px; color:#7f8ea3;}
+
+  /* ---------- tablet / desktop ---------- */
+  @media (min-width:720px){
+    .card-grid{grid-template-columns:1fr 1fr;}
+    .hero{min-height:92vh;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="images/logo_header.png" alt="ひなたコンパス ロゴ">
+    <a class="header-tel" href="tel:08017226819">📞 080-1722-6819</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">HINATA COMPASS ｜ AI活用サポート</p>
+    <h1>Googleマップから見つかる、<br>お店のホームページを作りませんか？</h1>
+    <p class="lead">宮崎の飲食店様へ。ホームページづくりとAI活用を、専門家がそばで一緒に考えます。</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#contact">まずは話を聞いてみる</a>
+      <a class="btn btn-outline" href="#service">サービスを見る</a>
+    </div>
+  </div>
+</section>
+
+<section class="concept">
+  <div class="wrap">
+    <p class="section-kicker">CONCEPT</p>
+    <h2 class="section-title">ひなたコンパスが<br>大切にしていること</h2>
+    <div style="margin-top:30px;">
+      <p>お客様が「近くのお店」を探すとき、まず開くのはGoogleマップです。そこからすぐにお店の雰囲気やメニューが伝わるホームページへ進んでもらえれば、来店につながる可能性は大きく変わります。まずはそこから、一緒に整えていきませんか？</p>
+      <p>「ホームページのことはよくわからない」「なんとなく高そう、難しそう」。多くの飲食店の方が、そんな不安を抱えていらっしゃるのではないでしょうか。その気持ちに、まず寄り添いたいと思っています。</p>
+      <p>ひなたコンパスが目指すのは、代わりにすべてをやってしまう存在ではありません。あなたと同じ目線に立ち、一緒に考え、一緒に歩む存在でありたいと願っています。</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="service">
+  <div class="wrap">
+    <p class="section-kicker">SERVICE</p>
+    <h2 class="section-title">サービス内容</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="tag">メインサービス</span>
+        <h3>ホームページ制作代行</h3>
+        <p>飲食店様向けに、お店の魅力が伝わるホームページを制作します。Googleビジネスプロフィール(Googleマップ)ともしっかり連携し、地図から見つけた方がそのままページにたどり着けるようにします。写真や思いをお聞きしながら、スマホでも美しく見えるページに仕上げます。</p>
+        <div class="price-box">
+          <span class="label">モニター価格</span>
+          <span class="price">¥30,000</span>
+          <span class="unit">〜(税込)</span>
+        </div>
+        <p class="price-note">実績を作らせていただく期間の価格です。制作したページを事例としてご紹介させていただける方に限り、30,000円(税込)〜でお受けしています。</p>
+      </div>
+      <div class="card">
+        <span class="tag">サブサービス</span>
+        <h3>AI導入コンサル</h3>
+        <p>中小企業様向けに、日々の業務にAIをどう取り入れるか、無理のない範囲で一緒に考え、導入をサポートします。</p>
+        <div class="price-box">
+          <span class="label">料金</span>
+          <span class="price" style="font-size:18px;">お気軽にご相談ください</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="quote-band">
+  <p class="q">「あなたの事業に、<br>伴走します。」</p>
+  <p class="who">ひなたコンパス 代表 宮前 浩</p>
+</div>
+
+<div class="scenery">
+  <p class="scenery-caption">宮崎の季節の移ろいの中で、日々お店に向き合う皆様のそばに。</p>
+</div>
+
+<section class="about" id="contact">
+  <div class="wrap">
+    <p class="section-kicker">ABOUT</p>
+    <h2 class="section-title">会社情報</h2>
+    <div class="info-table">
+      <div class="info-row">
+        <span class="k">代表</span>
+        <span class="v">宮前 浩</span>
+      </div>
+      <div class="info-row">
+        <span class="k">会社名</span>
+        <span class="v">ひなたコンパス</span>
+      </div>
+      <div class="info-row">
+        <span class="k">対応エリア</span>
+        <span class="v">宮崎県全域(オンラインでの対応も承ります)</span>
+      </div>
+      <div class="info-row">
+        <span class="k">電話</span>
+        <span class="v"><a href="tel:08017226819">080-1722-6819</a></span>
+      </div>
+      <div class="info-row">
+        <span class="k">メール</span>
+        <span class="v"><a href="mailto:hinata.compass.ai@gmail.com">hinata.compass.ai@gmail.com</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2>まずは一度、<br>お話ししてみませんか?</h2>
+    <p>ホームページのこと、AIのこと。まだ何も決まっていない段階でも大丈夫です。お気軽にご連絡ください。</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="mailto:hinata.compass.ai@gmail.com">メールで相談する</a>
+      <a class="btn btn-outline" href="tel:08017226819">電話で相談する</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="fname">ひなたコンパス</p>
+  <p class="ftag">AI活用サポート</p>
+  <p class="fcopy">サイト内の写真は代表・宮前が宮崎で撮影したものです。</p>
+  <p class="fcopy">&copy; 2026 Hinata Compass. All rights reserved.</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ひなたコンパス",
+  "description": "宮崎の飲食店様向けホームページ制作代行と、中小企業様向けAI導入コンサル。",
+  "url": "https://hinata-compass.pages.dev/",
+  "image": "https://hinata-compass.pages.dev/images/ogp.png",
+  "logo": "https://hinata-compass.pages.dev/images/logo_mark.png",
+  "telephone": "+81-80-1722-6819",
+  "email": "hinata.compass.ai@gmail.com",
+  "founder": { "@type": "Person", "name": "宮前 浩" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "宮崎県" },
+  "address": { "@type": "PostalAddress", "addressRegion": "宮崎県", "addressCountry": "JP" }
+}
+</script>
+
+</body>
+</html>
