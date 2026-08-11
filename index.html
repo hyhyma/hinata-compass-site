@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ひなたコンパス | ホームページ制作・AI活用サポート(宮崎)</title>
-<meta name="description" content="宮崎の飲食店様へ。ホームページ制作代行とAI導入サポートで、あなたの事業に伴走します。まずはお気軽にご相談ください。モニター価格30,000円(税込)〜。">
+<title>ひなたコンパス | 宮崎のホームページ制作・AI活用・DX支援</title>
+<meta name="description" content="宮崎県内の小規模事業者・店舗のみなさまへ。ホームページ制作、AI活用サポート、DX支援。専門用語を使わず、隣に座って一緒に進めます。ホームページはモニター価格30,000円(税込)〜。">
 
 <!-- canonical / OGP -->
 <link rel="canonical" href="https://hinata-compass.pages.dev/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ひなたコンパス">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="ひなたコンパス | ホームページ制作・AI活用サポート(宮崎)">
-<meta property="og:description" content="Googleマップから見つかる、お店のホームページを。宮崎の飲食店様向けのホームページ制作代行と、中小企業様向けのAI導入コンサル。">
+<meta property="og:title" content="ひなたコンパス | 宮崎のホームページ制作・AI活用・DX支援">
+<meta property="og:description" content="宮崎県内の小規模事業者・店舗向け。ホームページ制作と、AI活用・DXの支援。専門用語を使わず、一緒に進めます。">
 <meta property="og:url" content="https://hinata-compass.pages.dev/">
 <meta property="og:image" content="https://hinata-compass.pages.dev/images/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ひなたコンパス － Googleマップから見つかる、お店のホームページを。">
+<meta property="og:image:alt" content="ひなたコンパス － 宮崎のホームページ制作・AI活用・DX支援">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ひなたコンパス | ホームページ制作・AI活用サポート(宮崎)">
-<meta name="twitter:description" content="Googleマップから見つかる、お店のホームページを。宮崎の飲食店様向けのホームページ制作代行と、中小企業様向けのAI導入コンサル。">
+<meta name="twitter:title" content="ひなたコンパス | 宮崎のホームページ制作・AI活用・DX支援">
+<meta name="twitter:description" content="宮崎県内の小規模事業者・店舗向け。ホームページ制作と、AI活用・DXの支援。専門用語を使わず、一緒に進めます。">
 <meta name="twitter:image" content="https://hinata-compass.pages.dev/images/ogp.png">
 <meta name="theme-color" content="#1E3452">
 
@@ -89,19 +89,19 @@
     display:flex;
     align-items:flex-start;
     background:
-      linear-gradient(180deg, rgba(18,32,52,.60) 0%, rgba(18,32,52,.34) 38%, rgba(18,32,52,.14) 68%, rgba(18,32,52,.05) 100%),
+      linear-gradient(180deg, rgba(18,32,52,.62) 0%, rgba(18,32,52,.36) 38%, rgba(18,32,52,.16) 68%, rgba(18,32,52,.06) 100%),
       #122034 url("images/hero_coast.jpg") center center / cover no-repeat;
   }
   .hero-inner{
     position:relative; z-index:2;
     width:100%; max-width:920px; margin:0 auto;
-    padding:48px 24px 40px;
+    padding:52px 24px 40px;
     color:var(--cream);
   }
   .hero-eyebrow{
-    font-size:14px;
+    font-size:13.5px;
     letter-spacing:.14em;
-    color:#D98A1F;
+    color:var(--gold-lt);
     font-weight:700;
     margin-bottom:18px;
     text-shadow:0 1px 3px rgba(0,0,0,.8);
@@ -109,14 +109,15 @@
   .hero h1{
     font-family:"Shippori Mincho B1", serif;
     font-weight:700;
-    font-size:clamp(30px, 7vw, 48px);
+    font-size:clamp(30px, 7vw, 50px);
     line-height:1.55;
     margin-bottom:22px;
     text-shadow:0 1px 2px rgba(0,0,0,.9), 0 3px 10px rgba(0,0,0,.45);
   }
   .hero p.lead{
-    font-size:clamp(17px, 4vw, 20px);
+    font-size:clamp(16.5px, 4vw, 20px);
     color:#FFFFFF;
+    max-width:600px;
     margin-bottom:34px;
     text-shadow:0 1px 2px rgba(0,0,0,.85), 0 2px 8px rgba(0,0,0,.45);
   }
@@ -128,14 +129,15 @@
     text-decoration:none;
     padding:14px 30px;
     border-radius:999px;
-    transition:opacity .2s ease;
+    transition:opacity .2s ease, transform .2s ease;
   }
   .btn:active{opacity:.75;}
+  .btn:hover{transform:translateY(-1px);}
   .btn-primary{background:var(--gold); color:var(--navy-deep); font-weight:700;}
   .btn-outline{border:1px solid var(--cream); color:var(--cream); text-shadow:0 1px 3px rgba(0,0,0,.5);}
 
   /* ---------- section basics ---------- */
-  section{padding:76px 0;}
+  section{padding:80px 0;}
   .section-title{
     font-family:"Shippori Mincho B1", serif;
     font-weight:700;
@@ -151,8 +153,39 @@
     margin-bottom:14px;
   }
 
+  /* ---------- worries ---------- */
+  .worries{background:var(--white);}
+  .worry-list{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-top:32px;
+  }
+  .worry{
+    display:flex; align-items:flex-start; gap:14px;
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:20px 22px;
+    font-size:16.5px;
+    line-height:1.8;
+  }
+  .worry::before{
+    content:"「";
+    font-family:"Shippori Mincho B1", serif;
+    font-size:24px;
+    color:var(--gold);
+    line-height:1.3;
+    flex-shrink:0;
+  }
+  .worries .after{
+    margin-top:30px;
+    font-size:17.5px;
+    color:var(--navy);
+  }
+
   /* ---------- concept ---------- */
-  .concept{background:var(--white);}
+  .concept{background:var(--cream);}
   .concept p{
     font-size:18px;
     color:var(--navy-deep);
@@ -163,7 +196,7 @@
   .concept strong{color:var(--navy); font-weight:700;}
 
   /* ---------- services ---------- */
-  .services{background:var(--cream);}
+  .services{background:var(--white);}
   .card-grid{
     display:grid;
     grid-template-columns:1fr;
@@ -171,8 +204,9 @@
     margin-top:32px;
   }
   .card{
-    background:var(--white);
+    background:var(--cream);
     border:1px solid var(--line);
+    border-top:3px solid var(--gold);
     border-radius:14px;
     padding:30px 26px;
   }
@@ -194,6 +228,23 @@
     margin-bottom:12px;
   }
   .card p{font-size:16.5px; color:#33455e; margin-bottom:14px;}
+  .card ul{
+    list-style:none;
+    margin-bottom:14px;
+  }
+  .card li{
+    font-size:15.5px;
+    color:#33455e;
+    padding-left:20px;
+    position:relative;
+    margin-bottom:6px;
+  }
+  .card li::before{
+    content:"・";
+    color:var(--gold);
+    font-weight:700;
+    position:absolute; left:2px;
+  }
   .price-box{
     display:flex; align-items:baseline; gap:8px;
     border-top:1px dashed var(--line);
@@ -210,6 +261,36 @@
     font-size:13.5px; line-height:1.75; color:#6b7688;
     margin-top:10px;
   }
+
+  /* ---------- flow ---------- */
+  .flow{background:var(--cream);}
+  .flow-list{
+    margin-top:36px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:0;
+  }
+  .flow-step{
+    display:flex; gap:20px;
+    padding:24px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .flow-step:first-child{border-top:1px solid var(--line);}
+  .flow-num{
+    font-family:"Shippori Mincho B1", serif;
+    font-size:30px;
+    font-weight:700;
+    color:var(--gold);
+    line-height:1.2;
+    min-width:44px;
+  }
+  .flow-body h3{
+    font-family:"Shippori Mincho B1", serif;
+    font-size:19px;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .flow-body p{font-size:16px; color:#33455e;}
 
   /* ---------- quote band ---------- */
   .quote-band{
@@ -298,7 +379,8 @@
 
   /* ---------- tablet / desktop ---------- */
   @media (min-width:720px){
-    .card-grid{grid-template-columns:1fr 1fr;}
+    .card-grid{grid-template-columns:1fr 1fr 1fr;}
+    .worry-list{grid-template-columns:1fr 1fr 1fr;}
     .hero{min-height:92vh;}
   }
 </style>
@@ -314,13 +396,26 @@
 
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-eyebrow">HINATA COMPASS ｜ AI活用サポート</p>
-    <h1>Googleマップから見つかる、<br>お店のホームページを作りませんか？</h1>
-    <p class="lead">宮崎の飲食店様へ。ホームページづくりとAI活用を、専門家がそばで一緒に考えます。</p>
+    <p class="hero-eyebrow">HINATA COMPASS ｜ 宮崎のホームページ制作・AI活用・DX支援</p>
+    <h1>日向の国の商いに、<br>小さな道しるべを。</h1>
+    <p class="lead">宮崎県内の小規模事業者・店舗のみなさまへ。ホームページづくりから、AIの活用、日々の仕事のデジタル化まで。専門用語を使わずに、一緒に進めます。</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="#contact">まずは話を聞いてみる</a>
       <a class="btn btn-outline" href="#service">サービスを見る</a>
     </div>
+  </div>
+</section>
+
+<section class="worries">
+  <div class="wrap">
+    <p class="section-kicker">SUCH AS</p>
+    <h2 class="section-title">たとえば、こんなとき</h2>
+    <div class="worry-list">
+      <div class="worry">ホームページがまだない。SNSだけでやってきたけれど、そろそろ必要かもしれない」</div>
+      <div class="worry">AIが話題だけど、うちの仕事のどこで使えるのか、正直よく分からない」</div>
+      <div class="worry">予約も名簿も紙とノート。悪くはないけれど、もう少し楽にならないだろうか」</div>
+    </div>
+    <p class="after">どれか一つでも思い当たったら、ひなたコンパスの出番です。</p>
   </div>
 </section>
 
@@ -329,9 +424,9 @@
     <p class="section-kicker">CONCEPT</p>
     <h2 class="section-title">ひなたコンパスが<br>大切にしていること</h2>
     <div style="margin-top:30px;">
-      <p>お客様が「近くのお店」を探すとき、まず開くのはGoogleマップです。そこからすぐにお店の雰囲気やメニューが伝わるホームページへ進んでもらえれば、来店につながる可能性は大きく変わります。まずはそこから、一緒に整えていきませんか？</p>
-      <p>「ホームページのことはよくわからない」「なんとなく高そう、難しそう」。多くの飲食店の方が、そんな不安を抱えていらっしゃるのではないでしょうか。その気持ちに、まず寄り添いたいと思っています。</p>
-      <p>ひなたコンパスが目指すのは、代わりにすべてをやってしまう存在ではありません。あなたと同じ目線に立ち、一緒に考え、一緒に歩む存在でありたいと願っています。</p>
+      <p>お客様が「近くのお店」を探すとき、まず開くのはGoogleマップや検索です。そこにあなたのお店のページがあるかないかで、新しいお客様との出会いは大きく変わります。</p>
+      <p>とはいえ、ホームページもAIも、本業の合間に一人で調べて進めるのは大変です。カタカナ言葉ばかりの説明に、うんざりした経験がある方も多いと思います。</p>
+      <p>ひなたコンパスは、<strong>代わりに全部やってしまう業者ではなく、隣に座って一緒に考える相手</strong>でありたいと考えています。作りっぱなし、入れっぱなしにはしません。宮崎の小さな事業のペースに合わせて、無理のない一歩ずつを積み重ねます。</p>
     </div>
   </div>
 </section>
@@ -342,23 +437,84 @@
     <h2 class="section-title">サービス内容</h2>
     <div class="card-grid">
       <div class="card">
-        <span class="tag">メインサービス</span>
-        <h3>ホームページ制作代行</h3>
-        <p>飲食店様向けに、お店の魅力が伝わるホームページを制作します。Googleビジネスプロフィール(Googleマップ)ともしっかり連携し、地図から見つけた方がそのままページにたどり着けるようにします。写真や思いをお聞きしながら、スマホでも美しく見えるページに仕上げます。</p>
+        <span class="tag">ホームページ</span>
+        <h3>ホームページ作成</h3>
+        <p>お店や事業の雰囲気が伝わる1ページを、お話を伺いながら作ります。</p>
+        <ul>
+          <li>スマホで美しく見える設計</li>
+          <li>Googleマップ(ビジネスプロフィール)との連携</li>
+          <li>公開後の文言修正・更新のご相談も</li>
+        </ul>
         <div class="price-box">
           <span class="label">モニター価格</span>
           <span class="price">¥30,000</span>
           <span class="unit">〜(税込)</span>
         </div>
-        <p class="price-note">実績を作らせていただく期間の価格です。制作したページを事例としてご紹介させていただける方に限り、30,000円(税込)〜でお受けしています。</p>
+        <p class="price-note">制作したページを事例としてご紹介させていただける方に限った、実績づくり期間の価格です。</p>
       </div>
       <div class="card">
-        <span class="tag">サブサービス</span>
-        <h3>AI導入コンサル</h3>
-        <p>中小企業様向けに、日々の業務にAIをどう取り入れるか、無理のない範囲で一緒に考え、導入をサポートします。</p>
+        <span class="tag">AI活用</span>
+        <h3>AI活用サポート</h3>
+        <p>ChatGPTやClaudeなどのAIを、日々の仕事で使えるようになるまでお手伝いします。</p>
+        <ul>
+          <li>お知らせ文・POP・メニュー説明の下書き</li>
+          <li>お客様への案内文や返信の作成</li>
+          <li>操作を隣で練習するところから</li>
+        </ul>
         <div class="price-box">
           <span class="label">料金</span>
           <span class="price" style="font-size:18px;">お気軽にご相談ください</span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="tag">DX支援</span>
+        <h3>DX支援</h3>
+        <p>予約、注文、顧客名簿、請求書。紙で回っている仕事を、少しずつ楽な形に変えていきます。</p>
+        <ul>
+          <li>今の仕事の流れを聞くところから</li>
+          <li>無料・低価格の道具を優先してご提案</li>
+          <li>高価なシステムを売ることはしません</li>
+        </ul>
+        <div class="price-box">
+          <span class="label">料金</span>
+          <span class="price" style="font-size:18px;">お気軽にご相談ください</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flow">
+  <div class="wrap">
+    <p class="section-kicker">FLOW</p>
+    <h2 class="section-title">進め方</h2>
+    <div class="flow-list">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <div class="flow-body">
+          <h3>まずは雑談から(無料)</h3>
+          <p>電話でもメールでも、お店に伺ってでも。今の困りごとや、やってみたいことをお聞きします。この段階で費用はかかりません。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <div class="flow-body">
+          <h3>できることと費用のご提案</h3>
+          <p>お聞きした内容をもとに、何ができて、いくらかかるかを分かりやすくお伝えします。合わなければ断っていただいて構いません。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <div class="flow-body">
+          <h3>制作・導入</h3>
+          <p>ホームページの制作や、AI・デジタルの道具の導入を進めます。途中経過を見ていただきながら、納得のいく形に仕上げます。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <div class="flow-body">
+          <h3>公開して終わり、にしません</h3>
+          <p>公開後・導入後の「ここを直したい」「使い方が分からなくなった」にもお付き合いします。困ったときに聞ける相手がいる、という状態を保ちます。</p>
         </div>
       </div>
     </div>
@@ -371,21 +527,25 @@
 </div>
 
 <div class="scenery">
-  <p class="scenery-caption">宮崎の季節の移ろいの中で、日々お店に向き合う皆様のそばに。</p>
+  <p class="scenery-caption">宮崎の季節の移ろいの中で、日々商いに向き合う皆様のそばに。</p>
 </div>
 
 <section class="about" id="contact">
   <div class="wrap">
     <p class="section-kicker">ABOUT</p>
-    <h2 class="section-title">会社情報</h2>
+    <h2 class="section-title">事業者情報</h2>
     <div class="info-table">
+      <div class="info-row">
+        <span class="k">屋号</span>
+        <span class="v">ひなたコンパス</span>
+      </div>
       <div class="info-row">
         <span class="k">代表</span>
         <span class="v">宮前 浩</span>
       </div>
       <div class="info-row">
-        <span class="k">会社名</span>
-        <span class="v">ひなたコンパス</span>
+        <span class="k">事業内容</span>
+        <span class="v">ホームページ制作、AI活用サポート、DX支援</span>
       </div>
       <div class="info-row">
         <span class="k">対応エリア</span>
@@ -405,8 +565,8 @@
 
 <section class="closing">
   <div class="wrap">
-    <h2>まずは一度、<br>お話ししてみませんか?</h2>
-    <p>ホームページのこと、AIのこと。まだ何も決まっていない段階でも大丈夫です。お気軽にご連絡ください。</p>
+    <h2>まずは一度、<br>お話ししませんか。</h2>
+    <p>ホームページのこと、AIのこと、紙の仕事のこと。まだ何も決まっていない段階で大丈夫です。「よく分からないので全部聞きたい」というご連絡が、いちばん歓迎です。</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="mailto:hinata.compass.ai@gmail.com">メールで相談する</a>
       <a class="btn btn-outline" href="tel:08017226819">電話で相談する</a>
@@ -416,7 +576,7 @@
 
 <footer>
   <p class="fname">ひなたコンパス</p>
-  <p class="ftag">AI活用サポート</p>
+  <p class="ftag">宮崎のホームページ制作・AI活用・DX支援</p>
   <p class="fcopy">サイト内の写真は代表・宮前が宮崎で撮影したものです。</p>
   <p class="fcopy">&copy; 2026 Hinata Compass. All rights reserved.</p>
 </footer>
@@ -426,7 +586,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "ひなたコンパス",
-  "description": "宮崎の飲食店様向けホームページ制作代行と、中小企業様向けAI導入コンサル。",
+  "description": "宮崎県内の小規模事業者・店舗向けのホームページ制作、AI活用サポート、DX支援。",
   "url": "https://hinata-compass.pages.dev/",
   "image": "https://hinata-compass.pages.dev/images/ogp.png",
   "logo": "https://hinata-compass.pages.dev/images/logo_mark.png",
