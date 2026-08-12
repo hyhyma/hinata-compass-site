@@ -71,6 +71,10 @@
     max-width:920px; margin:0 auto;
   }
   .header-inner img{height:40px; width:auto;}
+  @media (max-width:520px){
+    .header-inner img{height:30px;}
+    .header-tel{font-size:13.5px; padding:7px 12px;}
+  }
   .header-tel{
     font-family:"Shippori Mincho B1", serif;
     font-size:15px;
@@ -99,7 +103,7 @@
     color:var(--cream);
   }
   .hero-eyebrow{
-    font-size:13.5px;
+    font-size:clamp(15px, 2.6vw, 20px);
     letter-spacing:.14em;
     color:var(--gold-lt);
     font-weight:700;
