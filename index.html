@@ -242,12 +242,17 @@
     position:absolute; left:2px;
   }
   .price-box{
-    display:flex; align-items:baseline; gap:8px;
+    display:flex; flex-wrap:wrap; align-items:baseline; gap:0 8px;
     border-top:1px dashed var(--line);
     padding-top:14px;
     margin-top:4px;
   }
-  .price-box .label{font-size:13px; color:#6b7688;}
+  .price-box .label{
+    flex:0 0 100%;
+    font-size:13px; color:#6b7688;
+    white-space:nowrap;
+    margin-bottom:6px;
+  }
   .price-box .price{
     font-family:"Shippori Mincho B1", serif;
     font-size:28px; color:var(--navy); font-weight:700;
