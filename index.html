@@ -223,7 +223,7 @@
     color:var(--navy);
     margin-bottom:12px;
   }
-  .card p{font-size:16.5px; color:#33455e; margin-bottom:14px;}
+  .card p{font-size:16.5px; color:#33455e; margin-bottom:14px;} .card-tail{display:flex; flex-direction:column;}
   .card ul{
     list-style:none;
     margin-bottom:14px;
@@ -380,7 +380,7 @@
 
   /* ---------- tablet / desktop ---------- */
   @media (min-width:720px){
-    .card-grid{grid-template-columns:1fr 1fr 1fr;}
+    .card-grid{grid-template-columns:1fr 1fr 1fr;} @supports (grid-template-rows:subgrid){ .card-grid{grid-template-rows:auto auto auto 1fr; row-gap:0;} .card{display:grid; grid-template-rows:subgrid; grid-row:span 4;} }
     .worry-list{grid-template-columns:1fr 1fr 1fr;}
     .hero{min-height:92vh;}
   }
@@ -441,7 +441,7 @@
         <span class="tag">ホームページ</span>
         <h3>ホームページ作成</h3>
         <p>お店や事業の雰囲気が伝わる1ページを、お話を伺いながら作ります。</p>
-        <ul>
+        <div class="card-tail"><ul>
           <li>スマホで美しく見える設計</li>
           <li>Googleマップ(ビジネスプロフィール)との連携</li>
           <li>公開後の文言修正・更新のご相談も</li>
@@ -451,34 +451,34 @@
           <span class="price">¥30,000</span>
           <span class="unit">〜(税込)</span>
         </div>
-        <p class="price-note">制作したページを事例としてご紹介させていただける方に限った、実績づくり期間の価格です。</p>
+        <p class="price-note">制作したページを事例としてご紹介させていただける方に限った、実績づくり期間の価格です。</p></div>
       </div>
       <div class="card">
         <span class="tag">AI活用</span>
         <h3>AI活用サポート</h3>
         <p>ChatGPTやClaudeなどのAIを、日々の仕事で使えるようになるまでお手伝いします。</p>
-        <ul>
+        <div class="card-tail"><ul>
           <li>お知らせ文・POP・メニュー説明の下書き</li>
           <li>お客様への案内文や返信の作成</li>
           <li>操作を隣で練習するところから</li>
         </ul>
         <div class="price-box">
           <span class="label">料金</span>
-          <span class="price" style="font-size:18px;">お気軽にご相談ください</span>
+          <span class="price" style="font-size:18px;">お気軽にご相談ください</span></div>
         </div>
       </div>
       <div class="card">
         <span class="tag">DX支援</span>
         <h3>DX支援</h3>
         <p>予約、注文、顧客名簿、請求書。紙で回っている仕事を、少しずつ楽な形に変えていきます。</p>
-        <ul>
+        <div class="card-tail"><ul>
           <li>今の仕事の流れを聞くところから</li>
           <li>無料・低価格の道具を優先してご提案</li><li>お店専用のアプリ開発</li>
           <li>高価なシステムを売ることはしません</li>
         </ul>
         <div class="price-box">
           <span class="label">料金</span>
-          <span class="price" style="font-size:18px;">お気軽にご相談ください</span>
+          <span class="price" style="font-size:18px;">お気軽にご相談ください</span></div>
         </div>
       </div>
     </div>
