@@ -317,10 +317,10 @@
     max-height:460px;
     background:#1a1108 url("images/scenery_sakura.jpg") center 62% / cover no-repeat;
   }
-  .scenery::after{
+  .scenery::before{content:"";position:absolute;inset:0;background-image:url("images/scenery_sakura.jpg");background-position:center 62%;background-size:cover;background-repeat:no-repeat;filter:url(#sh1) saturate(1.1);} .scenery::after{
     content:"";
     position:absolute; inset:0;
-    background:linear-gradient(0deg, rgba(18,32,52,.82) 0%, rgba(18,32,52,.48) 30%, rgba(18,32,52,0) 64%);
+    background:linear-gradient(0deg, rgba(18,32,52,.62) 0%, rgba(18,32,52,.26) 30%, rgba(18,32,52,0) 60%);
   }
   .scenery-caption{
     position:absolute; left:0; right:0; bottom:0; z-index:2;
@@ -599,5 +599,5 @@
 }
 </script>
 
-</body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="sh1" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="table" tableValues="0 0.34 0.58 0.75 0.87 0.95 1"/><feFuncG type="table" tableValues="0 0.34 0.58 0.75 0.87 0.95 1"/><feFuncB type="table" tableValues="0 0.34 0.58 0.75 0.87 0.95 1"/></feComponentTransfer></filter></svg></body>
 </html>
